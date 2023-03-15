@@ -13,5 +13,14 @@ Console.WriteLine("La prima classificata e' " + myFavoriteFood[0]);
 //stampo l'ultima in classifica
 Console.WriteLine("L'ultima classificata e' " + myFavoriteFood[myFavoriteFood.Length - 1]);
 //stampo la meta classifica 
-Console.WriteLine("A meta classifica c'e " + myFavoriteFood[myFavoriteFood.Length / 2]);
+
+if (myFavoriteFood.Length % 2 == 0)
+{
+    Console.WriteLine("A meta classifica ci sono " + myFavoriteFood[myFavoriteFood.Length / 2 - 1] + "e" + myFavoriteFood[myFavoriteFood.Length/2]);
+    
+}
+else
+{
+    Console.WriteLine("a meta classifica c'e " + myFavoriteFood[myFavoriteFood.Length / 2]);
+}
 
